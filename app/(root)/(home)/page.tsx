@@ -1,8 +1,9 @@
 import React from "react";
 //import Image from "next/image";
-import { services } from "@/constans";
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 import Maps from "@/components/Maps";
+import Modalwindows from "@/components/Modalwindow";
+
 import Link from "next/link";
 
 const page = () => {
@@ -41,7 +42,7 @@ const page = () => {
               de nuestros pacientes. Nuestro enfoque se centra en brindar un
               servicio de calidad y atención personalizada para garantizar la
               satisfacción y bienestar de quienes confían en nosotros. <br />
-              Con una ubicación privilegiada en Chimbote, ANC, nos esforzamos
+              Con una ubicación privilegiada en XXX, ANC, nos esforzamos
               por ofrecer tratamientos dentales innovadores y eficaces,
               respaldados por la última tecnología y técnicas especializadas. En
               Yanngo, su sonrisa es nuestra prioridad.
@@ -68,28 +69,7 @@ const page = () => {
             Servicios
           </h1>
           <div className="p-16 gap-3 grid grid-cols-1 lg:grid-cols-3 tablet:gap-6">
-            {services.map((item, index) => (
-              <Card
-                key={index}
-                isPressable
-                className="relative "
-                data-aos="fade-down-right "
-              >
-                <CardBody className="overflow-visible p-0  ">
-                  <Image
-                    radius="lg"
-                    width="100%"
-                    alt={item.name}
-                    className="w-full object-cover h-[240px]"
-                    src={item.image}
-                  />
-                </CardBody>
-                <CardFooter className="grid grid-cols-1 text-pretty">
-                  <h4 className="mb-2 font-primary">{item.name}</h4>
-                  <p className="text-lg">{item.description}</p>
-                </CardFooter>
-              </Card>
-            ))}
+            <Modalwindows/>
           </div>
         </div>
       </section>
@@ -128,6 +108,7 @@ const page = () => {
         </div>
         <Maps />
       </section>
+
     </>
   );
 };
