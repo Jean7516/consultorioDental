@@ -3,20 +3,20 @@ import { Facebook, Github, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide
 export const navLinks = [
   {
     label: "Home",
-    url: "/",
+    url: "/#home",
   },
   {
     label: "Acerca de...",
-    url: "#about",
+    url: "/#about",
   },
   {
     label: "Servicios",
-    url: "#service",
+    url: "/#service",
   },
  
   {
     label: "Ubicacion",
-    url: "#search",
+    url: "/#search",
   },
 ];
 

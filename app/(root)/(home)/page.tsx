@@ -9,7 +9,7 @@ const page = () => {
   return (
     <>
       {/*Seccion de banner */}
-      <section id="/" className="h-screen">
+      <section id="home" className="h-screen">
         <div className="flex flex-col w-full items-center justify-center h-screen gap-10">
           <span className="font-bold text-white text-2xl tablet:text-3xl w-2/3 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-center">
             Logre su mejor sonrisa ¡Experimente atención dental de clase mundial
@@ -95,8 +95,7 @@ const page = () => {
       </section>
 
       {/*Seccion de direccion */}
-      <section
-        id="search"
+      <section id="search"
         className="flex md:flex-col tablet:flex-row justify-center items-center tablet:pt-20 tablet:pb-20 bg-slate-500/20"
         data-aos="fade-down-right "
       >
